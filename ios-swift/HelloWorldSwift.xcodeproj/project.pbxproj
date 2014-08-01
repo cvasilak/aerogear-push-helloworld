@@ -12,6 +12,8 @@
 		4838934A194A35BF00C1C184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48389348194A35BF00C1C184 /* Main.storyboard */; };
 		4838934C194A35BF00C1C184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4838934B194A35BF00C1C184 /* Images.xcassets */; };
 		48389358194A35BF00C1C184 /* HelloWorldSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48389357194A35BF00C1C184 /* HelloWorldSwiftTests.swift */; };
+		6F19ECCC198BCB0800FBCA74 /* AeroGearPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F19EC8D198BC46B00FBCA74 /* AeroGearPush.framework */; };
+		6F19ECCD198BCB0800FBCA74 /* AeroGearPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F19EC8D198BC46B00FBCA74 /* AeroGearPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,49 @@
 			remoteGlobalIDString = 4838933E194A35BF00C1C184;
 			remoteInfo = HelloWorldSwift;
 		};
+		6F19EC8C198BC46B00FBCA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F71353119646266009B26D8;
+			remoteInfo = AeroGearPush;
+		};
+		6F19EC8E198BC46B00FBCA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F71353C19646266009B26D8;
+			remoteInfo = AeroGearPushTests;
+		};
+		6F19ECCA198BCB0000FBCA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F71353019646266009B26D8;
+			remoteInfo = AeroGearPush;
+		};
+		6F19ECCE198BCB0800FBCA74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F71353019646266009B26D8;
+			remoteInfo = AeroGearPush;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F19ECD0198BCB0800FBCA74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6F19ECCD198BCB0800FBCA74 /* AeroGearPush.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4838933F194A35BF00C1C184 /* HelloWorldSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +78,7 @@
 		48389351194A35BF00C1C184 /* HelloWorldSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48389356194A35BF00C1C184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48389357194A35BF00C1C184 /* HelloWorldSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldSwiftTests.swift; sourceTree = "<group>"; };
+		6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AeroGearPush.xcodeproj; path = "aerogear-push-ios-registration/AeroGearPush.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F19ECCC198BCB0800FBCA74 /* AeroGearPush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +125,7 @@
 				48389346194A35BF00C1C184 /* ViewController.swift */,
 				48389348194A35BF00C1C184 /* Main.storyboard */,
 				4838934B194A35BF00C1C184 /* Images.xcassets */,
+				6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */,
 				48389342194A35BF00C1C184 /* Supporting Files */,
 			);
 			path = HelloWorldSwift;
@@ -109,6 +156,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6F19EC87198BC46B00FBCA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F19EC8D198BC46B00FBCA74 /* AeroGearPush.framework */,
+				6F19EC8F198BC46B00FBCA74 /* AeroGearPushTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +175,13 @@
 				4838933B194A35BF00C1C184 /* Sources */,
 				4838933C194A35BF00C1C184 /* Frameworks */,
 				4838933D194A35BF00C1C184 /* Resources */,
+				6F19ECD0198BCB0800FBCA74 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F19ECCB198BCB0000FBCA74 /* PBXTargetDependency */,
+				6F19ECCF198BCB0800FBCA74 /* PBXTargetDependency */,
 			);
 			name = HelloWorldSwift;
 			productName = HelloWorldSwift;
@@ -176,6 +235,12 @@
 			mainGroup = 48389336194A35BF00C1C184;
 			productRefGroup = 48389340194A35BF00C1C184 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6F19EC87198BC46B00FBCA74 /* Products */;
+					ProjectRef = 6F19EC86198BC46B00FBCA74 /* AeroGearPush.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4838933E194A35BF00C1C184 /* HelloWorldSwift */,
@@ -183,6 +248,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6F19EC8D198BC46B00FBCA74 /* AeroGearPush.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AeroGearPush.framework;
+			remoteRef = 6F19EC8C198BC46B00FBCA74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6F19EC8F198BC46B00FBCA74 /* AeroGearPushTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AeroGearPushTests.xctest;
+			remoteRef = 6F19EC8E198BC46B00FBCA74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4838933D194A35BF00C1C184 /* Resources */ = {
@@ -228,6 +310,16 @@
 			isa = PBXTargetDependency;
 			target = 4838933E194A35BF00C1C184 /* HelloWorldSwift */;
 			targetProxy = 48389352194A35BF00C1C184 /* PBXContainerItemProxy */;
+		};
+		6F19ECCB198BCB0000FBCA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AeroGearPush;
+			targetProxy = 6F19ECCA198BCB0000FBCA74 /* PBXContainerItemProxy */;
+		};
+		6F19ECCF198BCB0800FBCA74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AeroGearPush;
+			targetProxy = 6F19ECCE198BCB0800FBCA74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,7 +428,6 @@
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -357,7 +448,6 @@
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
