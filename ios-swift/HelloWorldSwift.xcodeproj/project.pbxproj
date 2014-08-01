@@ -12,7 +12,6 @@
 		4838934A194A35BF00C1C184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48389348194A35BF00C1C184 /* Main.storyboard */; };
 		4838934C194A35BF00C1C184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4838934B194A35BF00C1C184 /* Images.xcassets */; };
 		48389358194A35BF00C1C184 /* HelloWorldSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48389357194A35BF00C1C184 /* HelloWorldSwiftTests.swift */; };
-		48389362194A379500C1C184 /* AeroGearPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48389361194A379500C1C184 /* AeroGearPush.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +34,6 @@
 		48389351194A35BF00C1C184 /* HelloWorldSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48389356194A35BF00C1C184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48389357194A35BF00C1C184 /* HelloWorldSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldSwiftTests.swift; sourceTree = "<group>"; };
-		48389361194A379500C1C184 /* AeroGearPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AeroGearPush.framework; sourceTree = "<group>"; };
-		48FC386F194A410F00A349E5 /* HelloWorldSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48389362194A379500C1C184 /* AeroGearPush.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,11 +57,9 @@
 		48389336194A35BF00C1C184 = {
 			isa = PBXGroup;
 			children = (
-				48389361194A379500C1C184 /* AeroGearPush.framework */,
 				48389341194A35BF00C1C184 /* HelloWorldSwift */,
 				48389354194A35BF00C1C184 /* HelloWorldSwiftTests */,
 				48389340194A35BF00C1C184 /* Products */,
-				48FC386F194A410F00A349E5 /* HelloWorldSwift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,6 +335,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -361,6 +356,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldSwift-Bridging-Header.h";
 			};
 			name = Release;
