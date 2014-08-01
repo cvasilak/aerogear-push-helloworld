@@ -76,10 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // perform registration of this device
         registration.registerWithClientInfo({ (clientInfo: AGClientDeviceInformation!) in
             
-            // retrieve the deviceToken
-            let deviceToken = NSUserDefaults.standardUserDefaults().dataForKey("deviceToken");
-            
-            // set it
+            // set the deviceToken
             clientInfo.deviceToken = deviceToken
             
             // You need to fill the 'Variant Id' together with the 'Variant Secret'
