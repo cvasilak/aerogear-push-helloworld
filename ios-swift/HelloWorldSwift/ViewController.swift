@@ -19,7 +19,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
                             
-    @IBOutlet var tableView : UITableView
+    @IBOutlet var tableView : UITableView!
     var messages: Array<String> = []
     
     override func viewDidLoad() {
