@@ -16,7 +16,7 @@ This project is a very simple helloworld, to show how to get started with the Un
 System requirements
 -------------------
 - iOS 8.X
-- Xcode version 6 Beta 7
+- Xcode version 6.1.1 and later
 
 Configure
 ---------
@@ -31,6 +31,14 @@ Open **HelloWorld.xcodeproj** and that's it.
 
 Build and Deploy the HelloWorld
 -------------------------------
+
+The project uses [Cocoapods ](http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/) for managing it's dependencies.  On the root directory of the project run:
+
+```bash
+pod install
+```
+
+Then simply open HelloWorldSwift.xcworkspace.
 
 ### Change Push Configuration
 
