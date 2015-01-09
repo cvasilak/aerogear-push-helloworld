@@ -16,7 +16,7 @@
 */
 
 import UIKit
-import AeroGearPushSwift
+import AeroGearPush
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
